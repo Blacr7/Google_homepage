@@ -1,1 +1,125 @@
+<!DOCTYPE html> 
+<html lang="en"> <head> 
+	<meta charset="utf-8"> 
+	<title> Google </title> 
+	<style> 
+		body { font-family: arial,sans-serif; font-size: 13px; }
+
+        div {
+            display: block;
+        }
+
+        #top-navbar { 
+            float: right;
+            display: block;
+            padding: 10px;
+            word-spacing: .3cm;
+            text-align: center;
+            position: relative;
+        }
+
+        #signin {
+            background-color: #4387FD;
+            color: white;
+            width: 120px;
+            text-align: center;
+            padding: 5px;
+            text-decoration: none;
+            word-spacing: 1px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline; 
+        }
+
+        #apps {
+            position: relative;
+             vertical-align: middle;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #google-logo {
+            position: absolute;
+            top: 25%;
+            left: 42%;
+        }           
+
+        #searchbar {
+            position: absolute;
+            padding-bottom: 2px;
+            padding-top: 3px;
+            width: 484px;
+            height: 38px;
+            top: 40%;
+            margin: 0;
+            left: 55%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%) }
+        }
+
+        #google-search {
+            background-color: rgb(242, 242, 242); 
+            background-image: -webkit-linear-gradient(top, rgb(245, 245, 245), rgb(241, 241, 241)); 
+            border-bottom-color: rgb(242, 242, 242); 
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px; 
+            border-bottom-style: solid; 
+            border-bottom-width: 1px; 
+            border-image-outset: 0px; 
+            border-image-repeat: stretch; 
+            border-image-slice: 100%; 
+            border-image-source: none; 
+            border-image-width: 1; 
+            border-left-color: rgb(242, 242, 242); 
+            border-left-style: solid; 
+            border-left-width: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="top-navbar">
+            <ul>
+                <li>Gmail</li>
+                <li>Images</li>
+                <li>
+                    <a href="https://www.google.com/intl/en/options/">
+                        <img id="apps" src="https://lh3.ggpht.com/ExOY2XlSbdfFFE3BZ5l44wBQEU5JVsVrertIIdjPy93yfDfomhKx0waLXA9Hhv5qvg-b3aaq=w22" />
+                    </a>
+                </li>   
+                <li>
+                    <a  id="signin" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/webhp%3Fhl%3Den">Sign In</a>
+                </li>
+            </ul>
+
+    </div>
+
+    <div id="logo-image">
+            <img id="google-logo" src="https://lh3.googleusercontent.com/-bfc25f3DOZ4/VTHoKFm7ZTI/AAAAAAAABT0/rrBlf5ulnvY/s319/Logo_Google_2013_Official.svg.png" />
+
+    </div>
+
+    <div>
+
+            <input type="text" name="searchbar"  id="searchbar" >
+
+    </div>
+
+    <div id="google-search" style="padding-top: 18px">
+        <input class="google-search" value="Google Search" type="submit">
+
+        <input class="google-search" value="I'm Feeling Artistic" type="submit">
+    </div>
+</body>
+
+</html>
 
