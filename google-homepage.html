@@ -10,14 +10,56 @@
         }
 
         #top-navbar { 
-            float: right;
-            display: block;
-            padding: 10px;
-            word-spacing: .3cm;
-            text-align: center;
-            position: relative;
+			align-items: center;
+			display: flex;
+			flex-basis: auto;
+			flex-grow: 1;
+			flex-shrink: 1;
+			float: right;
+			font-size: 13px;
+			justify-content: flex-end;
+			margin-left: 0px;
+			margin-right: 0px;
+			min-width: 223px;
+			order: 1;
+			padding-left: 30px;
+			padding-right: 30px;
+			position: relative;
+			text-align: right;
+			white-space: nowrap;
+			z-index: 987;
+			-moz-user-select: none;
         }
-
+			
+			#gimages {
+				display: flex;
+				flex-basis: auto;
+				flex-grow: 0;
+				flex-shrink: 1;
+				font-size: 13px;
+				line-height: 15px;
+				margin-left: 0px;
+				margin-right: 0px;
+				padding-right: 15px;
+				text-align: right;
+				white-space: nowrap;
+				
+			}
+				#gmail {
+					
+				}
+				#images {
+					
+				}
+			#appin {
+				
+			}
+				#apps {
+					
+				}
+				#sign-in {
+					
+				}
         #signin {
             background-color: #4387FD;
             color: white;
@@ -54,66 +96,78 @@
         }           
 		
 		#cposition {
-			color: #222;
-			font-family: arial,sans-serif;
-			font-size: 13px;
-			margin-bottom: 0px
-			margin-left: 0px;
-			margin-right: 0px;
-			margin-top: -1px;
-			padding-left: 173px;
-			padding-right: 173px;
-			padding-top: 8px;
-			position: relative;
+			margin-top: 0px;
+			min-width: 980px;
+			position: absolute;
+			top: 311px;
+			width: 980px;
+			z-index: 103;
 		}
-        	#searchbar { 
-			color: #222;
-			font-family: arial, sans-serif;
-			font-size: 13px;
-			padding-bottom: 2px;
-			padding-top: 3px;
-			width: 638px
-			left: 55%;
+			#sposition {
+				color: #222;
+				font-family: arial,sans-serif;
+				font-size: 13px;
+				margin-bottom: 0px
+				margin-left: 0px;
+				margin-right: 0px;
+				margin-top: -1px;
+				padding-left: 173px;
+				padding-right: 173px;
+				padding-top: 8px;
+				position: relative;
+			}
+				#searchbar { 
+				color: #222;
+				font-family: arial, sans-serif;
+				font-size: 13px;
+				padding-bottom: 2px;
+				padding-top: 3px;
+				width: 638px
+				left: 55%;
 
-        }
+			}
 
-        	#google-search, #lucky {
-			
-			border-radius: 1px;
-			border-style: solid;
-			border-width: 1px
-			display: inline-block;
-			font-size: 13px;
-			font-family: arial, sans-serif;
-			font-weight: 700;
-			height: 36px;
-			margin-bottom: 11px;
-			margin-left: 4px;
-			margin-right: 11px;
-			margin-top: 11px;
-			min-width: 54px;
-			padding-bottom: 0px;
-			padding-left: 16px;
-			padding-right: 16px;
-			padding-top: 0px;
-			text-align: center;
-        }
-    </style>
+				#google-search, #lucky {
+
+				border-radius: 1px;
+				border-style: solid;
+				border-width: 1px
+				display: inline-block;
+				font-size: 13px;
+				font-family: arial, sans-serif;
+				font-weight: 700;
+				height: 36px;
+				margin-bottom: 11px;
+				margin-left: 4px;
+				margin-right: 11px;
+				margin-top: 11px;
+				min-width: 54px;
+				padding-bottom: 0px;
+				padding-left: 16px;
+				padding-right: 16px;
+				padding-top: 0px;
+				text-align: center;
+			}
+		</style>
 </head>
 <body>
 
     <div id="top-navbar">
             <ul>
-                <li>Gmail</li>
-                <li>Images</li>
-                <li>
+				<div id="gimages">
+                	<li>Gmail</li>
+                	<li>Images</li>
+				</div>
+				<div id="appin">
+                	<li>
                     <a href="https://www.google.com/intl/en/options/">
                         <img id="apps" src="https://lh3.ggpht.com/ExOY2XlSbdfFFE3BZ5l44wBQEU5JVsVrertIIdjPy93yfDfomhKx0waLXA9Hhv5qvg-b3aaq=w22" />
                     </a>
                 </li>   
-                <li>
+                	<li>
                     <a  id="signin" href="https://accounts.google.com/ServiceLogin?						hl=en&passive=true&continue=https://www.google.com/webhp%3Fhl%3Den">Sign In</a>
                 </li>
+				</div>
             </ul>
 
     </div>
@@ -123,20 +177,22 @@
 
     </div>
 	
-	<div id="cposition">
-		<div id="searchbar">
+	<form id="search">
+		<div id="sposition">
+			<div id="searchbar">
 
-				<input type="text" name="searchbar"  id="searchbar" >
+					<input type="text" name="searchbar"  id="searchbar" >
 
+			</div>
+
+			<div id="submit" style="padding-top: 18px">
+
+				<input id="google-search" value="Google Search" type="submit">
+
+				<input id="lucky" value="I'm Feeling Artistic" type="submit">
+			</div>
 		</div>
-
-		<div id="submit" style="padding-top: 18px">
-
-			<input id="google-search" value="Google Search" type="submit">
-
-			<input id="lucky" value="I'm Feeling Artistic" type="submit">
-		</div>
-	</div>
+	</form>
 </body>
 
 </html>
