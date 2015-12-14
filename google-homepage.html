@@ -52,36 +52,51 @@
             top: 25%;
             left: 42%;
         }           
+		
+		#cposition {
+			color: #222;
+			font-family: arial,sans-serif;
+			font-size: 13px;
+			margin-bottom: 0px
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-top: -1px;
+			padding-left: 173px;
+			padding-right: 173px;
+			padding-top: 8px;
+			position: relative;
+		}
+        	#searchbar { 
+			color: #222;
+			font-family: arial, sans-serif;
+			font-size: 13px;
+			padding-bottom: 2px;
+			padding-top: 3px;
+			width: 638px
+			left: 55%;
 
-        #searchbar {
-            position: absolute;
-            padding-bottom: 2px;
-            padding-top: 3px;
-            width: 484px;
-            height: 38px;
-            top: 40%;
-            margin: 0;
-            left: 55%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%) }
         }
 
-        #google-search {
-            background-color: rgb(242, 242, 242); 
-            background-image: -webkit-linear-gradient(top, rgb(245, 245, 245), rgb(241, 241, 241)); 
-            border-bottom-color: rgb(242, 242, 242); 
-            border-bottom-left-radius: 2px;
-            border-bottom-right-radius: 2px; 
-            border-bottom-style: solid; 
-            border-bottom-width: 1px; 
-            border-image-outset: 0px; 
-            border-image-repeat: stretch; 
-            border-image-slice: 100%; 
-            border-image-source: none; 
-            border-image-width: 1; 
-            border-left-color: rgb(242, 242, 242); 
-            border-left-style: solid; 
-            border-left-width: 1px;
+        	#google-search, #lucky {
+			
+			border-radius: 1px;
+			border-style: solid;
+			border-width: 1px
+			display: inline-block;
+			font-size: 13px;
+			font-family: arial, sans-serif;
+			font-weight: 700;
+			height: 36px;
+			margin-bottom: 11px;
+			margin-left: 4px;
+			margin-right: 11px;
+			margin-top: 11px;
+			min-width: 54px;
+			padding-bottom: 0px;
+			padding-left: 16px;
+			padding-right: 16px;
+			padding-top: 0px;
+			text-align: center;
         }
     </style>
 </head>
@@ -97,7 +112,7 @@
                     </a>
                 </li>   
                 <li>
-                    <a  id="signin" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/webhp%3Fhl%3Den">Sign In</a>
+                    <a  id="signin" href="https://accounts.google.com/ServiceLogin?						hl=en&passive=true&continue=https://www.google.com/webhp%3Fhl%3Den">Sign In</a>
                 </li>
             </ul>
 
@@ -107,18 +122,21 @@
             <img id="google-logo" src="https://lh3.googleusercontent.com/-bfc25f3DOZ4/VTHoKFm7ZTI/AAAAAAAABT0/rrBlf5ulnvY/s319/Logo_Google_2013_Official.svg.png" />
 
     </div>
+	
+	<div id="cposition">
+		<div id="searchbar">
 
-    <div>
+				<input type="text" name="searchbar"  id="searchbar" >
 
-            <input type="text" name="searchbar"  id="searchbar" >
+		</div>
 
-    </div>
+		<div id="submit" style="padding-top: 18px">
 
-    <div id="google-search" style="padding-top: 18px">
-        <input class="google-search" value="Google Search" type="submit">
+			<input id="google-search" value="Google Search" type="submit">
 
-        <input class="google-search" value="I'm Feeling Artistic" type="submit">
-    </div>
+			<input id="lucky" value="I'm Feeling Artistic" type="submit">
+		</div>
+	</div>
 </body>
 
 </html>
