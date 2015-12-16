@@ -12,54 +12,19 @@
         #top-navbar { 
 			align-items: center;
 			display: flex;
-			flex-basis: auto;
-			flex-grow: 1;
-			flex-shrink: 1;
 			float: right;
 			font-size: 13px;
 			justify-content: flex-end;
 			margin-left: 0px;
 			margin-right: 0px;
 			min-width: 223px;
-			order: 1;
 			padding-left: 30px;
 			padding-right: 30px;
 			position: relative;
-			text-align: right;
-			white-space: nowrap;
-			z-index: 987;
-			-moz-user-select: none;
+			word-spacing: 10px;
         }
 			
-			#gimages {
-				display: flex;
-				flex-basis: auto;
-				flex-grow: 0;
-				flex-shrink: 1;
-				font-size: 13px;
-				line-height: 15px;
-				margin-left: 0px;
-				margin-right: 0px;
-				padding-right: 15px;
-				text-align: right;
-				white-space: nowrap;
-				
-			}
-				#gmail {
-					
-				}
-				#images {
-					
-				}
-			#appin {
-				
-			}
-				#apps {
-					
-				}
-				#sign-in {
-					
-				}
+			
         #signin {
             background-color: #4387FD;
             color: white;
@@ -92,7 +57,7 @@
         #google-logo {
             position: absolute;
             top: 25%;
-            left: 42%;
+            left: 40%;
         }           
 		
 		#cposition {
@@ -104,8 +69,6 @@
 			z-index: 103;
 		}
 			#sposition {
-				color: #222;
-				font-family: arial,sans-serif;
 				font-size: 13px;
 				margin-bottom: 0px
 				margin-left: 0px;
@@ -117,13 +80,14 @@
 				position: relative;
 			}
 				#searchbar { 
-				color: #222;
-				font-family: arial, sans-serif;
-				font-size: 13px;
-				padding-bottom: 2px;
-				padding-top: 3px;
-				width: 638px
-				left: 55%;
+				left: 18%;
+				position: absolute;
+				padding-left: 1px;
+				padding-right: 1px;
+				padding-top: 20px;
+				top: 140px;
+				width: 484px;
+				
 
 			}
 
@@ -131,12 +95,12 @@
 
 				border-radius: 1px;
 				border-style: solid;
-				border-width: 1px
-				display: inline-block;
+				border-width: 1px;
 				font-size: 13px;
 				font-family: arial, sans-serif;
 				font-weight: 700;
 				height: 36px;
+				left: 30%;
 				margin-bottom: 11px;
 				margin-left: 4px;
 				margin-right: 11px;
@@ -146,7 +110,9 @@
 				padding-left: 16px;
 				padding-right: 16px;
 				padding-top: 0px;
+				position: relative;
 				text-align: center;
+				top: 310px;
 			}
 		</style>
 </head>
@@ -154,11 +120,8 @@
 
     <div id="top-navbar">
             <ul>
-				<div id="gimages">
                 	<li>Gmail</li>
                 	<li>Images</li>
-				</div>
-				<div id="appin">
                 	<li>
                     <a href="https://www.google.com/intl/en/options/">
                         <img id="apps" src="https://lh3.ggpht.com/ExOY2XlSbdfFFE3BZ5l44wBQEU5JVsVrertIIdjPy93yfDfomhKx0waLXA9Hhv5qvg-b3aaq=w22" />
@@ -167,7 +130,7 @@
                 	<li>
                     <a  id="signin" href="https://accounts.google.com/ServiceLogin?						hl=en&passive=true&continue=https://www.google.com/webhp%3Fhl%3Den">Sign In</a>
                 </li>
-				</div>
+				
             </ul>
 
     </div>
