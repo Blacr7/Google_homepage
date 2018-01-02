@@ -20,40 +20,34 @@
         }
 
         #top-navbar { 
-        	
-			position: relative;
-			text-align: right;
-			margin-left: 0px;
 			opacity: 0.75;
-			top: 5%;
-			word-spacing: 10px;
-			width: 100%;
+			padding-top: 10px;
+			word-spacing: 13px;
+			height: 20px;
+		}#top-navbar-right {
+			float: right;
+		}#top-navbar-left{
+			float: left;
+		}#top-navbar img {
+        	vertical-align: bottom;
         }
-			#signin {
-	            background-color: #4387FD;
-	            color: white;
-	            /* width: 120px; */
-	            text-align: center;
-	            padding: 5px;
-	            text-decoration: none;
-	            word-spacing: 1px;
-        	}
+		#signin {
+			background-color: #4387FD;
+			color: white;
+			padding: 3px;
+			word-spacing: 1px;
+		}
 
-        	#apps {
-	            position: relative;
-	            vertical-align: middle;
-				height: 2%;
-				width: 2%;
-        	}
+		#apps {
+			height: 20px;
+			width: 20px;
+		}
         	
 
 	    #google-logo {
-	/* was once margin-top: 95px;
-	            padding-top: 50px;
-	            text-align: center; */
-	       		margin-top: 20%;
-	            text-align: center;
-	        }           
+	    	margin-top: 20%;
+	        text-align: center;
+	    }           
 		
 		#sposition {
 			display: inline;
@@ -96,7 +90,6 @@
 					text-align: center;
 				}
 		#bottom-bar {
-			
 			position: absolute;
 			bottom: 0;
 			width: 100%;
